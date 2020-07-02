@@ -56,7 +56,7 @@ typings/
 
 # gatsby files
 .cache/
-public
+# public added back in public since we need to build the site locally to deploy
 
 # Mac files
 .DS_Store

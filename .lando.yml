@@ -5,26 +5,28 @@ config:
 proxy:
   gatsby:
     - gatsby-nateageek.lndo.site:8000
+    - gatsby-nateageek.lndo.site:40281
   appserver:
     - drupal-nateageek.lndo.site
 services:
   gatsby:
     type: node
-    port: 3000
+    port: 8000
     globals:
       gatsby-cli: latest
-    build: cd gatsby && npm install
-    command: cd gatsby && npm run develop
+    build: 
+      - "cd gatsby && npm install"
+    command: "cd gatsby && npm run develop"
 tooling:
   drush:
     service: appserver
-    cmd: drush drush --root=/app/drupal
+    cmd: drush --root=/app/drupal
   npm:
     service: gatsby
-    cmd: cd gatsby && npm
+    cmd: npm
   npx:
     service: gatsby
-    cmd: cd gatsby && npx
+    cmd: npx
   gatsby:
     service: gatsby
-    cmd: cd gatsby && gatsby
+    cmd: gatsby
