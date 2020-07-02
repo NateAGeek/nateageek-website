@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404/404.tsx"],"names":["NotFoundPage"],"mappings":"2FAAe,SAASA,IACtB,OACE,+BAAK,4CAFT","file":"component---src-pages-404-404-tsx-90d2ee6e0b9c78be12ad.js","sourcesContent":["export default function NotFoundPage() {\n  return (\n    <div><h1>NOT FOUND</h1></div>\n  );\n}"],"sourceRoot":""}

@@ -5,8 +5,8 @@ modules/contrib
 themes/contrib
 profiles
 sites/example.*
-sites/default/*
 !sites/default/config
+sites/default/files/*
 !sites/default/files/images
 !sites/default/settings.php
 .ht.router.php
